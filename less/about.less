@@ -1,0 +1,170 @@
+.container-about{
+    .about-page{
+        background-color: rgb(227, 227, 227);
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 30rem;
+        @media @mobile{ 
+            height: auto;
+                }
+
+        .about-top-section{
+            display: flex;
+            flex-direction: column;
+            width: 90rem;
+            margin-left: 10%;
+            font-weight: 700;
+            line-height: 6rem;
+            z-index: 11;
+            @media @mobile{ 
+                padding: 11rem 0 0;
+                align-items: center;
+                margin: 0;
+            }
+            h1{
+            @media (max-width: 640px) {
+                font-size: 4.2rem;
+            }
+        }
+
+
+            .made-social{
+                color: @light-blue;
+                position: relative;
+                left: 5rem;  
+                line-height: 9rem;
+                @media @mobile{ 
+                    position: static;
+                    line-height: 3rem;
+                }
+                // span{
+                //     @media @mobile{ 
+                //         display: block;
+                //         line-height: 3rem;
+                //             }
+                // }
+                
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 2rem;
+                font-weight: 20;
+            }
+            
+        }
+
+    }
+
+    .about-content-section{
+        
+        display: flex;
+        // height: 100rem;
+        // border: .5rem solid red;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem 0 0;
+
+        .tabs {
+            .tabs-items {
+            width: 100%;
+            // height: 300px;
+            display: flex;
+            justify-content: space-around;
+            // padding-top: 60px;
+            }
+            .tabs-item {
+            display: none; 
+        
+            .tabs-item-title {
+                font-size: 24px;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            }
+            .tabs-item-selected {
+            display: block;
+            }
+        
+            .tabs-links {
+            display: flex;
+            justify-content: center;
+            background-color: @dark-blue;
+            }
+        
+            .tabs-link {
+            padding: 24px 0;
+            font-size: 24px;
+            background-color: @dark-blue;
+            border-right: 1px solid white;
+            border-left: 1px solid white;
+            color: @white;
+            width: 15rem;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                background-color: @not-as-dark-blue;
+            }
+                transition-duration: .5s;
+        
+            }
+            .tabs-link-selected {
+            z-index: 2;
+            padding: 20px 0;
+            border: 1px solid @dark-blue;
+            // border-right: 1px solid @dark-blue;
+            // border-left: 1px solid white;
+
+            background-color: white;
+            font-size: 29px;
+            color: @dark-blue;
+            &:hover {
+                background-color: white;
+            }
+            transition-duration: .5s;
+            }
+        }
+        .person{
+            padding: 3rem 0;
+            @media @mobile{ 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+            h2{
+                font-size: 3.5rem;
+            }
+            h3{
+                font-size: 2.3rem;
+            }
+            p{
+                padding: 1.6rem 0 0;
+            }
+            display: flex;
+            .person-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 3rem;
+                @media @mobile{ 
+                    padding: 1rem 4rem;
+                        }
+            }
+            img {
+                height: 35rem;
+                padding: 0 0 0 9rem;
+                @media @mobile{ 
+                padding: 0 2rem 4rem;
+                    }
+
+            }
+        }
+    
+    }
+    
+}
+
+  
+  
+  
